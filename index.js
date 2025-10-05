@@ -18,20 +18,11 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rich presence started!`
   )
   const r = new Discord.RichPresence()
-    .setApplicationId('1187238107209273345')
+    .setApplicationId('1107744228773220473')
     .setType('PLAYING')
-    .setURL('https://twitch.tv/discord')
-
     .setName('Roblox')
-    .setDetails('Just Started')
-    /*.setParty({
-        max: 9999,
-        current: 7000,
-        id: Discord.getUUID(),
-    })*/
-
-    //.setStartTimestamp(Date.now())
-    .setAssetsLargeImage('https://media.discordapp.net/attachments/1187377061959045181/1211155528408104990/3a9ad6131057802cd6c6694d58cd7253.jpg?ex=65ed2b7c&is=65dab67c&hm=ac474442f75a5d961f6a91956fc5bdfa0ed757f81d15e706f8014242082b655b&')
+    .setStartTimestamp(Date.now())
+    .setAssetsLargeImage('https://cdn.discordapp.com/attachments/1187377061959045181/1424025128542670888/a74302ee6ea5e4c27bb472f91c859aba.jpg?ex=68e31aff&is=68e1c97f&hm=1f2d045635b86d11364a0581c56b2ad335a03abcbc7797c034dd8c49a47640fd&')
     .setAssetsLargeText('Roblox')
   client.user.setActivity(r);
   client.user.setPresence({ status: "dnd" });
